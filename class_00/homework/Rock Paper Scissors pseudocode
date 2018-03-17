@@ -1,0 +1,26 @@
+store HandshapeOne
+store HandshapeTwo
+
+store function of RockPaperScissors as
+    IF HandshapeOne = HandshapeTwo,
+        return "DRAW, PLAY AGAIN"
+        ELSE IF HandshapeOne = "rock" AND HandshapeTwo = "scissors"
+                return playerOneWins
+        ELSE IF HandshapeOne = "rock" AND HandshapeTwo = "paper"
+                return playerTwoWins
+        ELSE IF HandshapeOne = "scissors" AND HandshapeTwo = "rock",
+                return playerTwoWins
+        ELSE IF HandshapeOne = "scissors" AND HandshapeTwo = "paper",
+                return playerOneWins
+        ELSE IF HandshapeOne = "paper" AND HandshapeTwo = "rock",
+                return playerOneWins
+        ELSE IF HandshapeOne = "paper" AND HandshapeTwo = "scissors",
+                return playerTwoWins
+
+run RockPaperScissors
+
+IF RockPaperScissors returns playerOneWins two times
+    return "PLAYER ONE WINS ALL",
+ELSE IF RockPaperScissors returns playerTwoWins two times
+    return "PLAYER TWO WINS ALL"
+ELSE "KEEP PLAYING TO SEE WHO WINS"

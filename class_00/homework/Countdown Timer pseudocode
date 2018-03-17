@@ -1,0 +1,9 @@
+store targetDate
+
+store todayDate as todaysDate
+
+IF targetDate > todayDate
+    return targetDate - todayDate in dd
+ELSE IF targetDate = todayDate
+    return "Today is the target date!"
+ELSE return "The target date is finished."
