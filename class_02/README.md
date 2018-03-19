@@ -33,24 +33,24 @@ Inheritence = Whenever you create a primitive datatype, you get two things: prop
  ``` "Hello " + "World"; // Concatenation (use addition operator to combine two strings)```
  
 #### Numbers
+``` 4; ```
+``` 4.12; ```
+``` -20.20202; ```
+``` 0.002; ```
+``` NaN ```
 * Numbers in JS are integers, floats (decimals), negative, positive, some other weird things...
- ``` 4; ```
- ``` 4.12; ```
- ``` -20.20202; ```
- ``` 0.002; ```
- ``` NaN ```
 * Arithmetic in JS
- * 4 + 8;   // Addition
- * 12 - 4;  // Subtraction
- * 4 * 5;   // Multiplication
- * 8 / 4;   // Division
- * 9 % 4;   // Remainder 
+    * 4 + 8;   // Addition
+    * 12 - 4;  // Subtraction
+    * 4 * 5;   // Multiplication
+    * 8 / 4;   // Division
+    * 9 % 4;   // Remainder 
 
 #### Booleans
-* A logical data type that can only have the value _true_ or _false_.
-* They are used primarily to determine which sections of code to execute (e.g. the **if conditional**) or which sections of code to repeat (e.g. the **for loop**).
 ``` true; ```
 ``` false; ```
+* A logical data type that can only have the value _true_ or _false_.
+* They are used primarily to determine which sections of code to execute (e.g. the **if conditional**) or which sections of code to repeat (e.g. the **for loop**).
 
 #### Undefined
 * A data type meaning that there is no value. 
