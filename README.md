@@ -1,1 +1,10 @@
-Hello, this is my JS05 repo. I've written this in the command line. I am a genius. 
+# JS05SYD
+## JavaScript Development
+
+This is my repository for our JavaScript Development course at General Assembly starting 12 March 2018.
+
+Class00 - InstallFest
+
+Class01 - Command Line + Github
+
+
