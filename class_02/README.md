@@ -295,5 +295,3 @@ if ( !hasAccount ) {
 }
 ```
 
-## Loops
-
