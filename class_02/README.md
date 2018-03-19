@@ -7,22 +7,22 @@
 ## Data Types
 * Building blocks of language - types of information
  * **Primitive data types** = immutable (strings, numbers, Boolean, undefined)
-  * _Strings_ = pieces of text = "hello world"; 'a';
-  * _Numbers_ = integers or floats = 4; 2.6;
-  * _Booleans_ = true or false = false; 0;
-  * Undefined = hasn't been assigned a value = undefined;
-  * Null = non-existent = null;
-  * Symbol (added in ES6) = anonymous data = Symbol("hello");
+    * _Strings_ = pieces of text = "hello world"; 'a';
+    * _Numbers_ = integers or floats = 4; 2.6;
+    * _Booleans_ = true or false = false; 0;
+    * Undefined = hasn't been assigned a value = undefined;
+    * Null = non-existent = null;
+    * Symbol (added in ES6) = anonymous data = Symbol("hello");
  * **Composite data types** = mutable (arrays, lists) = collections of primitive or other composite data types
-  * _Objects_ = collection of data = {name: "Jane"}
-  * _Arrays_ = ordered collection of data = [ 4 , 2.6 ]
-  * _Functions_ = a callable subprogram = function hi () {}
+    * _Objects_ = collection of data = {name: "Jane"}
+    * _Arrays_ = ordered collection of data = [ 4 , 2.6 ]
+    * _Functions_ = a callable subprogram = function hi () {}
 
 ### Primitive data types
 Inheritence = Whenever you create a primitive datatype, you get two things: properties and methods.
- * Property = attribute of the datatype, e.g. "A String".length;
- * Method = callable function of the data type, e.g. "A String".toUppercase;
-  * Predicate methods will return true or false, e.g. "hello".startsWith("h");
+    * Property = attribute of the datatype, e.g. "A String".length;
+    * Method = callable function of the data type, e.g. "A String".toUppercase;
+* Predicate methods will return true or false, e.g. "hello".startsWith("h");
 
 #### Strings 
  ``` "";```
@@ -56,9 +56,9 @@ Inheritence = Whenever you create a primitive datatype, you get two things: prop
 * A data type meaning that there is no value. 
  ``` undefined;```
 * This often pops up when:
- * A variable has just been declared and hasn't been assigned a value
- * You attempt to access an object's property and it has no associated value
- * You receive a parameter in a function, but no argument has been provided for that parameter 
+    * A variable has just been declared and hasn't been assigned a value
+    * You attempt to access an object's property and it has no associated value
+    * You receive a parameter in a function, but no argument has been provided for that parameter 
 * This is what the browser sets automatically.
 
 #### Null
@@ -71,7 +71,16 @@ Inheritence = Whenever you create a primitive datatype, you get two things: prop
 * Named containers for storing, and accessing, data.
 * Variables are ways to store information in memory.
 * You assign a name to a certain piece of data or collection of code. Think of them as named buckets.
-
+* To create a variable =
+    * the **var** keyword
+    * a JavaScript identifier (i.e. name of the bucket)
+    * a single equals sign (_assignment_)
+    * a value
+``` var myVariable = "some data"; ```
+* Or... =
+    * the **var** keyword
+    * a JavaScript identifier
+``` var myVariable;```
 
 ## Loops
 
