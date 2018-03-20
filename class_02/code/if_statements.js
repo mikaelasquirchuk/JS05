@@ -68,3 +68,19 @@ if (vehicle === "car") {
 } else {
     console.log("What are you on!?!?!");
 }
+
+if ( 2 === 2 ) {
+    console.log("That makes sense");
+}
+
+var favBook = "GEB";
+
+if ( favBook === "GEB" ) {
+    console.log("Good choice!");
+}
+
+var playerOneMove = "Rock";
+
+if ( playerOneMove === "Scissors" ) {
+    console.log("P1 played scissors");
+}

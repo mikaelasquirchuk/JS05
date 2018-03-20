@@ -1,4 +1,4 @@
-# JS05 Class 02 - Data Types, Conditionals + Loops
+# JS05 Class 02 - Data Types + Conditionals
 
 ## Review
 * Type node in CMD will allow you to type JS directly into CMD = Read Execute Print Loop = REPL
@@ -25,9 +25,9 @@ Inheritence = Whenever you create a primitive datatype, you get two things: prop
 * Predicate methods will return true or false, e.g. "hello".startsWith("h");
 
 #### Strings 
- ``` 
- "";
- "A piece of text";
+``` 
+"";
+"A piece of text";
 'These are all strings';
 "Jane's bag";
 'Bill\'s guitar';
@@ -88,6 +88,7 @@ false;
     * a value
 
 ``` var myVariable = "some data"; ```
+
 * Or... =
     * the **var** keyword
     * a JavaScript identifier
@@ -145,40 +146,18 @@ false;
 
 ```
 if ( CONDITION GOES HERE ) {
- // CODE TO EXECUTE IF THE
-  // CONDITION EVALUATES TO TRUE
-}
-```
-
-```
-if ( 2 === 2 ) {
-    console.log("That makes sense");
-}
-
-var favBook = "GEB";
-
-if ( favBook === "GEB" ) {
-    console.log("Good choice!");
-}
-
-var playerOneMove = "Rock";
-
-if ( playerOneMove === "Scissors" ) {
-    console.log("P1 played scissors");
+ // CODE TO EXECUTE IF THE CONDITION EVALUATES TO TRUE
 }
 ```
 
 #### If / Else Statement
 ```
 if ( CONDITION GOES HERE ) {
-
-    // CODE TO EXECUTE IF THE 
-    // CONDITION EVALUATES TO TRUE
+    CODE TO EXECUTE IF THE CONDITION EVALUATES TO TRUE
 
 } else {
     
-    // CODE TO EXECUTE IF THE 
-    // CONDITION EVALUATES TO FALSE
+    // CODE TO EXECUTE IF THE CONDITION EVALUATES TO FALSE
 
 }
 ```
@@ -244,17 +223,6 @@ if ( FIRST CONDITION ) {
 
 The && (AND) Logical Operator requires the conditions on BOTH sides to evaluate to true in order to pass.
 
-```
-var userNameExists = true;
-var correctPassword = true;
-
-if (userNameExists === true && correctPassword === true) {
-  console.log("You are logged in");
-} else {
-  console.log("Something went wrong");
-}
-```
-
 #### || (OR) Truth Table
 
 | CONDITION 1 | CONDITION 2 | RESULT |
@@ -266,16 +234,6 @@ if (userNameExists === true && correctPassword === true) {
 
 The /|/| (OR) Logical Operator requires the conditions on AT LEAST ONE side to evaluate to true in order to pass.
 
-```
-var lang = "HTML";
-
-if (lang === "HTML" || lang === "CSS" || lang === "JS") {
-  console.log("You are talking about a frontend language");
-} else {
-  console.log("It is probably a backend language");
-}
-```
-
 #### ! (NOT) Truth Table
 
 VALUE | RESULT
@@ -284,14 +242,3 @@ false | true
 true | false
 
 The ! (NOT) Logical Operator takes one value and turns it into the opposite boolean representation
-
-```
-var hasAccount = false;
-
-if ( !hasAccount ) {
-  console.log("You can create an account");
-} else {
-  console.log("You already have an account");
-}
-```
-
