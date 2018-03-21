@@ -182,3 +182,5 @@ var birthYear = explorer.birth.year;
 ```
 
 * Do the exericses found here: https://gist.github.com/ga-wolf/10181616b156eee0ea2303ba08e3f075
+
+* To avoid writing over a pre-existing key, nest your code in an if statement that asks whether the ```object.hasOwnProperty("key")```!
