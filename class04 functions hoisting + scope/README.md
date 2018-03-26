@@ -174,8 +174,48 @@ var person = {
 person.sayHi();
 ```
 
+### Scope
+* Scope defines everything (variables, functions, values, etc.) you have access to at some point in your code
+* Scope is like a pyramid. Lower scopes can access those above them, but not below.
+* The top level is the Global Scope (the complete JavaScript environment).
+* Essentially, scoping is name resolution. Where can you access JavaScript identifiers in your code?
+* JavaScript uses Lexical Scoping: means that scope is defined by the position in source code
 
+#### Local scope
+* Function Scoping is the scope that is created when a function is called
+* The scope a function creates is called Local Scope
 
+```
+var global = "Global Scope";
+
+function someFunction() {
+    var local = "Local Scope";
+}
+
+console.log(global); // => "Global Scope"
+console.log(local);  // => ReferenceError
+```
+
+```
+var global = "Global Scope";
+
+function someFunction() {
+    var innerScope = "Inner Scope";
+
+    function someInnerFunction() {
+        var innerInnerScope = "InnerInner Scope";
+        // 3. What can we access from here?
+    }
+
+    someInnerFunction();
+    // 2. What can we access from here?
+}
+
+someFunction();
+// 1. What can we access from here?
+```
+
+![](img/scope.png)
 
 ### Hoisting
 * Javascript reads through a document before it executes the code.
@@ -183,4 +223,9 @@ person.sayHi();
 * It doesn't give var variables a value yet, it just moves them up.
 * But if you create a function declaration (cf function expression), it will take the whole thing to the top, so you can call it before you delare it.
 * If you move the callsite to higher up the document than the function declaration, it will call the function. But with a function expression, it won't.
+
+* Hoisting is a way to explain the way that execution contexts work
+* One way to think of it... Variable declarations and function declarations get physically moved to the top of the scope
+* But really, they get put in memory during the compile phase.
+
 
