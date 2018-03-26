@@ -1,4 +1,4 @@
-# JS05 Class 04 - Functions
+# JS05 Class 04 - Functions, Hoisting + Scope
 
 ## Review
 * For loops
