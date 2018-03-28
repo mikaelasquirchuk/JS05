@@ -5,5 +5,12 @@
 function translator (lang) {
     if (lang === "fr") {
         "Bonjour, le monde";
+    } else if (lang === "en") {
+        "Hello world";
+    } else if (lang === "gb") {
+        "LKJSDKLJSD";
     }
 }
+
+translator("en");
+translator("gb");
