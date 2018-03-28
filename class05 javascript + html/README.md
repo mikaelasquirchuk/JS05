@@ -191,29 +191,10 @@ var href = aTag.setAttribute("href", "/home");
 var id = aTag.setAttribute("id", "home");
 ```
 
-#### Creating DOM Nodes or changing text
-
-* We can make our own HTML elements as well!
+#### Changing text or HTML
 
 ```element.innerText```
 ```element.innerHTML``` <- includes any HTML tags
-
-```
-// Create Element in Memory
-var newPara = document.createElement( "p" );
-
-// Set the text
-newPara.innerText = "Created with JS";
-
-// Set the styles
-newPara.style.fontSize = "24px";
-newPara.style.color = "hotpink";
-
-// Put it on the page
-document.body.appendChild( newPara ); // Or...
-document.body.insertBefore(newPara, document.body.firstChild); // Or...
-document.body.innerHTML += newPara;
-```
 
 
 #### Getting values
@@ -254,5 +235,36 @@ heading.style.width = "400px";
 heading.style.fontSize = "24px";
 ```
 
+
+#### Creating DOM Nodes or changing text/HTML
+
+* We can make our own HTML elements as well!
+
+```element.innerText```
+```element.innerHTML``` <- includes any HTML tags
+
+```
+// Create Element in Memory
+var newPara = document.createElement( "p" );
+
+// Set the text
+newPara.innerText = "Created with JS";
+
+// Set the styles
+newPara.style.fontSize = "24px";
+newPara.style.color = "hotpink";
+
+// Put it on the page
+document.body.appendChild( newPara ); // Or...
+document.body.insertBefore(newPara, document.body.firstChild); // Or...
+document.body.innerHTML += newPara;
+```
+
+## Events
+
+### Some Terminology
+* Event: something that happens
+* Callback: a function that executes after the event has happened
+* Event listener: a method that binds an event to a callback
 
 

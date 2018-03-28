@@ -130,3 +130,37 @@ var aTag = document.querySelector('a');
 aTag.style.color = 'red';
 aTag.style.textDecoration = "underline";
 aTag.style.fontFamily = "monospace";
+
+//Creating DOM nodes
+
+var newPara = document.createElement("p");
+
+newPara.innerText = "Created with JS";
+newPara.style.textTransform="uppercase";
+newPara.style.color="chartreuse";
+
+
+document.body.appendChild(newPara);
+
+//Events with JS
+//1 event type (click/hover/scroll)
+//2 event target (element to interact with - node)
+//3 callback function (function)
+
+var eventType = "click";
+
+var button = document.querySelector("button");
+
+function buttonClicked() {
+    document.body.style.backgroundColor = "#16161d";
+    document.body.style.color = "white";
+    button.innerText = "Light Theme";
+}
+
+button.addEventListener(eventType,buttonClicked);
+
+
+
+
+
+
