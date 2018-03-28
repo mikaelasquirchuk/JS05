@@ -12,6 +12,8 @@ var translations = {
 };
 ```
 
+http://madebyknight.com/javascript-scope/
+
 
 ## The Fortune Teller
 
