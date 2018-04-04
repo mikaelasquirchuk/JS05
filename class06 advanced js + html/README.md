@@ -108,6 +108,10 @@ myButton.addEventListener("click", function() {
 2. Add the event listener and pass in a function to call
 
 #### Anonymous Functions
+
+* This is a very simple way of creating an event listener with a set function.
+* You can't ever remove that event handler!
+
 ```
 var myButton = document.querySelector("button");
 
@@ -116,7 +120,7 @@ myButton.addEventListener("click", function() {
 });
 ```
 
-You can't ever remove that event handler!
+
 
 #### Referenced Events
 ```
@@ -175,10 +179,79 @@ window.addEventListener("mousemove", function (event) {
 ```
 
 
-## Timers
+## Timers: What are timers?
+* There are two main ways to work with time in JavaScript
+    * You can set a delay with setTimeout
+    * You can set an interval with setInterval
+
+``` window.setTimeout( CALLBACK, TIME_IN_MS );`
+
+``` function delayedFunction() {}
+
+window.setTimeout( delayedFunction, 1000 );
+```
+
+
+``` window.setInterval( CALLBACK, TIME_IN_MS );`
+```
+function regularlyScheduledProgram() {}
+
+window.setInterval(regularlyScheduledProgram, 1000);
+```
 
 
 ## Animations
 
+![](img/animations.png)
+
+* Things you need to define:
+    * Starting Point
+    * Step
+    * Time between steps
+    * Total time
+    * Ending Point
+
+```
+SELECT and STORE the image as bill
+
+CREATE a function called fadeBillAway
+  GET the current opacity and store as currentOpacityAsString
+  GET the current opacity as a number and store as currentOpacity
+  CREATE newOpacity by subtracting 0.01 from currentOpacity
+  UPDATE bill opacity to be newOpacity
+  IF the currentOpacity is >= 0
+    CALL fadeBillAway in 10ms
+
+CALL fadeBillAway to start the animation
+```
+```
+var bill = document.querySelector("img");
+
+function fadeBillAway() {
+  var currentOpacityAsString = getComputedStyle(bill).opacity;
+  var currentOpacity = parseFloat(currentOpacityAsString, 10);
+  var newOpacity = currentOpacity -= 0.01;
+  bill.style.opacity = newOpacity;
+  if (currentOpacity >= 0) {
+    window.setTimeout(fadeBillAway, 10);
+  }
+}
+
+window.setTimeout(fadeBillAway, 1000);
+```
+### Homework
+
+Finish all exercises from class
+Catwalk: https://gist.github.com/ga-wolf/083d0b3e1ef559c12128375664b93570
+Dancing cats:
+https://gist.github.com/ga-wolf/ae7d0e1df214e45213c5
 
 
+Make previous exercises dynamic!
+Plus, anything else!
+Create your own Endless Horse: http://endless.horse/
+Train Stations: https://gist.github.com/ga-wolf/cbf4b4ddc1bcebc16afb7aae3ad785f1#a-transit-application
+99 Bottles: https://gist.github.com/ga-wolf/b481809fbc843accf84940796a36d629#99-bottles-of-beer
+Working with Users:
+https://gist.github.com/ga-wolf/cbf4b4ddc1bcebc16afb7aae3ad785f1#working-with-users
+Bonus: Make Users work with Local storage

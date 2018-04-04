@@ -68,8 +68,8 @@ addImage();
 
 function changeImage() {
     var image = document.querySelector("img");
-    randomNum = Math.floor(Math.random()*500)+100
-    randomSizePic = "https://picsum.photos/"+randomNum;
+    var randomNum = Math.floor(Math.random()*500)+100;
+    var randomSizePic = "https://picsum.photos/"+randomNum;
     image.setAttribute("src",randomSizePic);
 }
 document.addEventListener("click", changeImage);
