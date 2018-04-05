@@ -91,6 +91,6 @@ window.addEventListener("mousemove",function(e) {
 
 // }
 
-// newImage.addEventListener("click",onType)
+// newImage.addEventListener("click",onClick)
 
 
