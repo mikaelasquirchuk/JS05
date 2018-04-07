@@ -241,10 +241,10 @@ window.setTimeout(fadeBillAway, 1000);
 ```
 ### Homework
 
-Finish all exercises from class
+<!-- Finish all exercises from class
 Catwalk: https://gist.github.com/ga-wolf/083d0b3e1ef559c12128375664b93570
 Dancing cats:
-https://gist.github.com/ga-wolf/ae7d0e1df214e45213c5
+https://gist.github.com/ga-wolf/ae7d0e1df214e45213c5 -->
 
 
 Make previous exercises dynamic!
