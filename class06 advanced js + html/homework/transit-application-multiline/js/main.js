@@ -49,15 +49,15 @@ function capitaliseFirstLetter(string) {
 };
 
 
-function findLine(lines) {
+function findLine(lines,station) {
     for (var key in lines) {
-        if (lines.hasOwnProperty(key)) {
+        if (lines.hasOwnProperty(key) && lines[key].includes(station)) {
             console.log(lines[key]);
         }
     }
 }
 
-findLine(sydneyTrains);
+findLine(sydneyTrains,'Macdonaldtown');
 
 
 // Create a function called travelFrom that receives a start station and an end station.
