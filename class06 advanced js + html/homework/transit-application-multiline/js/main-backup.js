@@ -42,27 +42,18 @@ var sydneyTrains = {
 };
 
 
+var redLine = sydneyTrains.redLine;
+var blueLine = sydneyTrains.blueLine;
+var yellowLine = sydneyTrains.yellowLine;
+var navyLine = sydneyTrains.navyLine;
 
 //Function to capitalise firstletters
 function capitaliseFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
-
-function findLine(lines) {
-    for (var key in lines) {
-        if (lines.hasOwnProperty(key)) {
-            console.log(lines[key]);
-        }
-    }
-}
-
-findLine(sydneyTrains);
-
-
 // Create a function called travelFrom that receives a start station and an end station.
-function travelFrom(startLine,startStation,endLine,endStation) {
-    
+function travelFrom(startStation,endStation) {
     // var startingLine = sydneyTrains.startLine; (and change all refs from startLine to startingLine)
     // var endingLine = sydneyTrains.endLine; (and change all refs from endLine to endingLine and comment out var redLine.... etc above)
     var start = capitaliseFirstLetter(startStation.toLowerCase());
