@@ -40,8 +40,8 @@ var sydneyTrains = {
         "Bondi Junction",
     ]
 };
-
-
+var lines = Object.keys(sydneyTrains);
+console.log(lines);
 
 //Function to capitalise firstletters
 function capitaliseFirstLetter(string) {
@@ -49,15 +49,11 @@ function capitaliseFirstLetter(string) {
 };
 
 
-function findLine(lines,station) {
-    for (var key in lines) {
-        if (lines.hasOwnProperty(key) && lines[key].includes(station)) {
-            console.log(lines[key]);
-        }
-    }
-}
+// function findLine(lines,station) {
+    
+// }
 
-findLine(sydneyTrains,'Macdonaldtown');
+// findLine(lines,'Macdonaldtown');
 
 
 // Create a function called travelFrom that receives a start station and an end station.
