@@ -941,10 +941,53 @@ function render () {
     document.body.innerHTML += markup;
 }
 
-render();
 
 // Second Step
 // Add search functionality! Add an input at the top of the page and a button. When you click the button, show all related definitions (use whatever the user typed in to show relevant results).
+
+//hide all items
+//show items related to search - tags, definition, term
+
+
+
+function searchFunction(searchTerm) {
+  var searchInput = document.querySelector("#text");
+  var searchTerm = searchInput.value;
+  var relevantItems = glossary.filter(function(item) {
+    return ( 
+    item.term === searchTerm ||
+    item.definition.includes(searchTerm) || 
+    item.class == searchTerm)
+  });
+  var relevantItemsMarkup = relevantItems.reduce(function(currentItem, item){
+    var allTags = item.tags;
+    var tagMarkup = allTags.reduce(function(currentHTML, tag) {
+        return currentHTML + `#${tag} `
+    },"");
+    return currentItem + `
+      <div class="item">
+        <h2>${item.term}</h2>
+        <h4>Class ${item.class}</h4>
+        <p>${item.definition}</p>
+        <p class="tags">${tagMarkup}</p>
+      </div>
+    `
+  },"");
+  document.body.innerHTML += relevantItemsMarkup;
+}
+
+
+
+var button = document.querySelector("#button");
+button.addEventListener("click",searchFunction);
+
+
+
+
+// var relevantItems = glossary.filter(function(item) {
+//   return item.term === searchTerm;
+// });
+
 
 // Bonus
 // Make this happen whenever the user presses a key!
