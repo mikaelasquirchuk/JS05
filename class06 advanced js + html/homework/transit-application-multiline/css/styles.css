@@ -1,5 +1,5 @@
 html {
-    font-family:'Abril Fatface',Arial, Helvetica, sans-serif;
+    
     font-size:15px;
     color:#16161d;
     background:white;
@@ -26,9 +26,14 @@ input#button {
 }
 
 div#answer, div#heading {
+    font-family:'Doses',Arial, Helvetica, sans-serif;
     font-size: 15px;
     margin:auto;
     width:80%;
     padding:20px;
-    text-align:center
+    text-align:center;
+}
+
+div#heading {
+    font-family:'Poiret One',Arial, Helvetica, sans-serif;
 }
