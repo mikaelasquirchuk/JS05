@@ -1,0 +1,16 @@
+html, body {
+    background: #16161d;
+    margin: 0;
+    color:white;
+    font-family: 'Tajawal',sans-serif;
+    padding:10px;
+}
+
+h1 {
+    font-family: 'Tajawal',sans-serif;
+}
+
+img {
+    float:left;
+    margin-right:10px;
+}
