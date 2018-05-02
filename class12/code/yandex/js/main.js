@@ -16,7 +16,7 @@ function displayData(data) {
   const synth = window.speechSynthesis;
   const utterThis = new SpeechSynthesisUtterance(translation);
   utterThis.lang = "fr";
-  utterThis.voice;
+  utterThis.voice = ;
   debugger;
   synth.speak(utterThis);
 }
